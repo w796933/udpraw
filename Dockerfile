@@ -8,7 +8,7 @@ ENV KCP_VERSION 20171113
 ENV RAW_VERSION 20171125.0
 
 RUN apk upgrade --update \
-    && apk add bash tzdata libsodium \
+    && apk add bash tzdata libsodium iptables net-tools \
     && apk add --virtual .build-deps \
         autoconf \
         automake \
