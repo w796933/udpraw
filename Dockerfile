@@ -38,7 +38,7 @@ RUN apk upgrade --update \
     && mv client_linux_amd64 /usr/bin/kcpclient \
     && curl -sSLO https://github.com/wangyu-/udp2raw-tunnel/releases/download/$RAW_VERSION/udp2raw_binaries.tar.gz \
     && tar -zxf udp2raw_binaries.tar.gz \
-    && mv udpraw_amd64 /usr/bin/udpraw \
+    && mv udp2raw_amd64 /usr/bin/udpraw \
     && ln -sf /usr/share/zoneinfo/$TZ /etc/localtime \
     && echo $TZ > /etc/timezone \
     && runDeps="$( \
