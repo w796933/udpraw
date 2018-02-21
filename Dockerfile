@@ -5,7 +5,7 @@ ARG TZ='Asia/Shanghai'
 ENV TZ $TZ
 ENV SS_LIBEV_VERSION 3.1.3
 ENV KCP_VERSION 20171201 
-ENV RAW_VERSION 20171125.0
+ENV RAW_VERSION 20180220.1
 
 RUN apk upgrade --update \
     && apk add bash tzdata libsodium iptables net-tools \
